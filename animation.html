@@ -6,5 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animation</title>
   </head>
-  <body></body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+    }
+    .box {
+      width: 400px;
+      height: 200px;
+      background-color: indianred;
+    }
+    p {
+      transition: margin 5s;
+    }
+    .box:hover p {
+      /* transform: translateX(200px); */
+      margin-left: 380px;
+    }
+  </style>
+  <body>
+    <div class="box"><p>Transition</p></div>
+  </body>
 </html>
